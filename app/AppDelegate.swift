@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  app
+//  Fox Clicker 2
 //
 //  Created by Dagg on 9/5/19.
 //  Copyright © 2019 Dagg. All rights reserved.
@@ -11,7 +11,6 @@ import SwiftUI
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
     var window: NSWindow!
 
 
@@ -27,6 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.contentView = NSHostingView(rootView: thatclass.ContentView())
 
         window.makeKeyAndOrderFront(nil)
+        window.titlebarAppearsTransparent = true
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
