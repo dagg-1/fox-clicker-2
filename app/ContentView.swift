@@ -9,9 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var points = 0
     var body: some View {
-        Text("Hello World")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        VStack {
+            Button(action: { self.points += 1 }) {
+                Text("Click Me")
+            }
+            Text("\(points) Clicks")
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
