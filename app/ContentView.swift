@@ -8,6 +8,8 @@
 
 import SwiftUI
 
+var points : Int64 = 0
+
 struct BuyableList: View {
     var FoxVar = ""
     var FoxVarPhrase = ""
@@ -25,8 +27,9 @@ struct BuyableList: View {
                     Text("Cost: \(Int64(FoxVarCost))").font(.subheadline)
                     Divider()
                     Button(action: {
-                        if(500 > Int64(self.FoxVarCost)) {
+                        if(points > Int64(self.FoxVarCost)) {
                             self.FoxVarNumber += 1
+                            points -= Int64(self.FoxVarCost)
                             self.FoxVarCost *= self.FoxVarInc
                         }
                     }) {
@@ -39,19 +42,19 @@ struct BuyableList: View {
 }
 
 struct ContentView: View {
-    @State var points : Int64 = 0
-    
+    @State var content: Int64 = points
     var body: some View {
         HStack {
             List() {
                 BuyableList(FoxVar: "Fox Farm", FoxVarPhrase: "Plant", FoxVarInc: 1.02, FoxVarCost: Double(100))
                 BuyableList(FoxVar: "Fox Factory", FoxVarPhrase: "Build", FoxVarInc: 1.08, FoxVarCost: Double(200))
             }
+            Divider()
             VStack {
-                Button(action: { self.points += 1 }) {
+                Button(action: { points += 1; print(points) }) {
                     Text("Spawn Fox")
                 }
-                Text("\(points) Points")
+                Text("\(content) Points")
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
