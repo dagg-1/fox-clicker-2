@@ -27,7 +27,7 @@ struct BuyableList: View {
                     Text("Cost: \(Int64(FoxVarCost))").font(.subheadline)
                     Divider()
                     Button(action: {
-                        if(points > Int64(self.FoxVarCost)) {
+                        if(points >= Int64(self.FoxVarCost)) {
                             self.FoxVarNumber += 1
                             points -= Int64(self.FoxVarCost)
                             self.FoxVarCost *= self.FoxVarInc
