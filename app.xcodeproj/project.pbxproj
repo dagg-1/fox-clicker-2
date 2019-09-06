@@ -12,6 +12,7 @@
 		1817931E2321F33700FCD1C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1817931D2321F33700FCD1C8 /* Assets.xcassets */; };
 		181793212321F33700FCD1C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181793202321F33700FCD1C8 /* Preview Assets.xcassets */; };
 		181793242321F33700FCD1C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181793222321F33700FCD1C8 /* Main.storyboard */; };
+		1836151C23225F5900A55A3D /* juniper.png in Resources */ = {isa = PBXBuildFile; fileRef = 1836151B23225F5900A55A3D /* juniper.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		181793232321F33700FCD1C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		181793252321F33700FCD1C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181793262321F33700FCD1C8 /* app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = app.entitlements; sourceTree = "<group>"; };
+		1836151B23225F5900A55A3D /* juniper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = juniper.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		181793182321F33700FCD1C8 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				1836151B23225F5900A55A3D /* juniper.png */,
 				181793192321F33700FCD1C8 /* AppDelegate.swift */,
 				1817931B2321F33700FCD1C8 /* ContentView.swift */,
 				1817931D2321F33700FCD1C8 /* Assets.xcassets */,
@@ -135,6 +138,7 @@
 				181793242321F33700FCD1C8 /* Main.storyboard in Resources */,
 				181793212321F33700FCD1C8 /* Preview Assets.xcassets in Resources */,
 				1817931E2321F33700FCD1C8 /* Assets.xcassets in Resources */,
+				1836151C23225F5900A55A3D /* juniper.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = app/app.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"app/Preview Content\"";
@@ -305,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = app/app.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"app/Preview Content\"";
